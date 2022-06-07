@@ -56,8 +56,6 @@
 
   <%= form_with model: @book, url: '/books', method: :post do |f| %>
 
-  <form>
-
   <div class="field">
 
     <div>
@@ -65,7 +63,7 @@
     </div>
 
       <div>
-        <text><%= f.text_field :title %></text>
+        <%= f.text_field :title %>
       </div>
 
   </div>
@@ -77,7 +75,7 @@
     </div>
 
     <div>
-      <text><%= f.text_area :body %></text>
+      <%= f.text_area :body %>
     </div>
 
   </div>
@@ -87,8 +85,6 @@
   </div>
 
 <% end %>
-
-</form>
 
 </body>
 </html>

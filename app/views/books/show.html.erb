@@ -10,7 +10,7 @@
       <%= flash[:notice] %>
     </div>
     <% end %>
-    <a>
+
       <p>
         <strong>Title: </strong><%= @book.title %>
       </p>
@@ -19,7 +19,7 @@
       </p>
 
     <%= link_to "Edit", edit_book_path(@book.id) %>
-    </a>
+
    |
   <a class="back" href=/books>Back</a>
 </body>
